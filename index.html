@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> INFO RIO </title>
+    <link rel="stylesheet" href="./assets/css/comunidade.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="imagem4.png" alt="Logo" class="logo-image">
+                <h1>INFO-RIO: Informações e Alertas do Rio Grande do Sul </h1>
+            </div>
+        
+        </div>
+    </header>
+    
+    <main>  <section class="alertas">
+        <h2> ATENÇÃO!!!</h2>
+        <div id="alertMessage" class="alert-message">Nenhum alerta ativo no momento</div>
+    </section>
+        <section class="carrossel">
+            <div class="carousel-container">
+                <img src="../imagem1.jpg" alt="Imagem 1" class="carousel-image active">
+                <img src="../imagem2.jpg" alt="Imagem 2" class="carousel-image">
+                <img src="../imagem3.jpg" alt="Imagem 2" class="carousel-image">
+                
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </section>
+        
+      
+        
+        <section class="timeline">
+            <h2>Linha do Tempo de Alertas</h2>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-date">01/10/2024</div>
+                    <div class="timeline-content">
+                        <h3>Alerta de Enchente</h3>
+                        <p>Foi emitido um alerta de enchente para a região Sul devido a chuvas intensas.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">02/10/2024</div>
+                    <div class="timeline-content">
+                        <h3>Atualização de Alerta</h3>
+                        <p>As condições meteorológicas pioraram, aumentando o risco de enchentes.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">03/10/2024</div>
+                    <div class="timeline-content">
+                        <h3>Reforço nas Estruturas</h3>
+                        <p>Equipes estão sendo enviadas para reforçar as estruturas de contenção.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">04/10/2024</div>
+                    <div class="timeline-content">
+                        <h3>Aviso de Evacuação</h3>
+                        <p>Evacuação obrigatória em áreas de risco. Procure abrigo em locais seguros.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="faq">
+            <h2>Perguntas Frequentes</h2>
+            <div class="faq-item">
+                <h3 class="faq-question">Como saber se minha região está em risco?</h3>
+                <p class="faq-answer">Verifique sempre os alertas no site e consulte o mapa de risco em tempo real.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">Quais são os itens essenciais durante uma enchente?</h3>
+                <p class="faq-answer">Tenha água potável, alimentos não perecíveis, documentos, medicamentos e roupas secas.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">O que fazer se a água entrar na minha casa?</h3>
+                <p class="faq-answer">Evacue imediatamente para um local seguro e informe os serviços de emergência.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">Como posso me preparar para enchentes?</h3>
+                <p class="faq-answer">Crie um plano de emergência, mantenha suprimentos essenciais e conheça os locais seguros.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">Onde posso encontrar abrigos durante uma enchente?</h3>
+                <p class="faq-answer">Consulte as autoridades locais ou o site da Defesa Civil para informações sobre abrigos disponíveis.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">Como posso ajudar a comunidade durante uma enchente?</h3>
+                <p class="faq-answer">Você pode oferecer doações, se voluntariar em abrigos ou ajudar na distribuição de alimentos e suprimentos.</p>
+            </div>
+        </section>
+        
+        <section class="doacoes">
+            <h2>Solidariedade e Ação Comunitária</h2>
+            <p>Contribua para ajudar quem mais precisa durante as enchentes.</p>
+        
+            <h3>Necessidades Urgentes</h3>
+            <ul>
+                <li>Alimentos não perecíveis</li>
+                <li>Roupas e cobertores</li>
+                <li>Itens de higiene pessoal</li>
+                <li>Medicamentos e primeiros socorros</li>
+                <li>Material escolar para crianças</li>
+                <li>Brinquedos e itens de conforto</li>
+            </ul>
+        
+            <h3>Participe com Doações</h3>
+            <p>Ajude a comunidade em situações de enchente. Preencha o formulário abaixo para contribuir:</p>
+            <form>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="contact">Contato:</label>
+                <input type="text" id="contact" name="contact" required>
+                <button type="submit">Enviar</button>
+            </form>
+        
+            <h3>Cadastro de Voluntários</h3>
+<p>Seja um voluntário e faça a diferença!</p>
+<form id="volunteerForm">
+    <label for="fullName">Nome Completo:</label>
+    <input type="text" id="fullName" name="fullName" placeholder="Digite seu nome completo" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+    <label for="phone">Telefone:</label>
+    <input type="tel" id="phone" name="phone" placeholder="Digite seu telefone" required>
+
+    <label for="address">Endereço:</label>
+    <input type="text" id="address" name="address" placeholder="Digite seu endereço" required>
+
+    <button type="submit" onclick="registerVolunteer(event)">Registrar</button>
+</form>
+
+    </main>
+<footer>
+    <section class="contato">
+        <h2>Tem Sugestões ou Dúvidas?</h2>
+        <h3>Entre em Contato Conosco</h3>
+        <p>Estamos aqui para ouvir você! Se tiver perguntas, sugestões ou precisar de mais informações, não hesite em nos contatar.</p>
+        
+        <div class="contato-info">
+            <h4>Informações de Contato</h4>
+            <ul>
+                <li><strong>E-mail:</strong> <a href="mailto:contato@email.com">contato@email.com</a></li>
+                <li><strong>Telefone:</strong> <a href="tel:+5511999999999">(11) 9999-9999</a></li>
+                <li><strong>Endereço:</strong> Rua Exemplo, 123, Cidade, Estado, CEP 00000-000</li>
+            </ul>
+        </div>
+    
+        <h4>Redes Sociais</h4>
+        <p>Siga-nos para atualizações e informações:</p>
+        <div class="redes-sociais">
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        </div>
+    </section>
+</footer>
+    
+    
+
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>

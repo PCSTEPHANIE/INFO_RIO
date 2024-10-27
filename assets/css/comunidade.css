@@ -1,0 +1,435 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do corpo */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: var(--color-text-primario);
+}
+
+
+/* Estilos gerais */
+nav {
+    background-color: #025362;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline; /* Efeito ao passar o mouse */
+}
+
+/* Header */
+.site-header {
+    background-color: #025362;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 30px;
+    margin: 0;
+}
+
+header {
+    background-color: #025362;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* FAQ */
+.faq {
+    margin: 20px 0;
+}
+
+.faq h2 {
+    color: red;
+}
+
+.faq-item {
+    margin: 10px 0;
+}
+
+.faq-question {
+    cursor: pointer;
+    color:#025362;
+}
+
+.faq-item p {
+    cursor: pointer;
+    color: white;
+}
+
+
+
+/* Estilo do formulário */
+.formulario-sugestoes {
+    margin: 20px 0;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Doações */
+.doacoes {
+    background-color: #f0f4f8;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.doacoes h2 {
+    color: #025362;
+}
+
+.doacoes h3 {
+    margin-top: 1.5rem;
+    color: #025362;
+}
+
+.doacoes p {
+    margin-bottom: 1rem;
+}
+
+.doacoes ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.doacoes li {
+    margin-bottom: 0.5rem;
+}
+
+.doacoes form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.doacoes label {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.doacoes input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+}
+
+.doacoes button {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: #025362;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.doacoes button:hover {
+    background-color: #025362;
+}
+
+/* Contato */
+.contato {
+    background-color: #f7f9fc;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.contato h2 {
+    color: #025362;
+}
+
+.contato h3 {
+    margin-top: 1.5rem;
+    color: #025362;
+}
+
+.contato p {
+    margin-bottom: 1rem;
+}
+
+.contato-info {
+    margin-bottom: 1.5rem;
+}
+
+.contato-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contato-info li {
+    margin-bottom: 0.5rem;
+}
+
+.redes-sociais {
+    margin-top: 1rem;
+}
+
+.redes-sociais a {
+    display: inline-block;
+    margin-right: 1rem;
+    text-decoration: none;
+    color: #025362;
+    font-weight: bold;
+}
+
+.redes-sociais a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    form input, form button {
+        width: 100%;
+    }
+}
+/* Estilo da FAQ */
+.faq {
+    margin: 20px 0;
+}
+
+.faq-item {
+    margin: 10px 0;
+}
+
+.faq-question {
+    cursor: pointer; /* Mão ao passar o mouse */
+    color: black; /* Cor do texto da pergunta */
+}
+
+
+/* Carrossel */
+.carrossel {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-image {
+    min-width: 100%;
+    display: none;
+}
+
+.carousel-image.active {
+    display: block; /* Mostra apenas a imagem ativa */
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Estilo das alertas */
+.alertas {
+    background-color: red;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 1rem;
+}
+
+.alertas h2 {
+    text-align: center;
+    color: var(--color-text-primario);
+    margin-bottom: 2rem;
+}
+
+.alert-message {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    animation: blink 1s infinite;
+    color: var(--color-text-secundario);
+}
+
+/* Estilo das categorias */
+.categoria-item {
+    margin: 10px 0;
+    background-color: #e7f5e1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+main {
+    max-width: 1200px; /* Largura máxima do main */
+    margin: 20px auto; /* Centraliza */
+    padding: 20px; /* Espaçamento */
+    background: white; /* Fundo branco */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #025362; /* Cor de fundo do rodapé */
+    color: black; /* Cor do texto */
+    text-align: center; /* Alinhamento central */
+    padding: 20px 0; /* Espaçamento */
+    margin-top: 20px; /* Margem superior */
+}
+
+footer a {
+    color: #025362; /* Cor dos links */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+/* Estilo da linha do tempo */
+.timeline {
+    margin: 20px 0; /* Margem vertical */
+}
+
+.timeline-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+}
+
+.timeline-item {
+    padding: 10px 20px;
+    border-left: 3px solid #025362;
+    margin: 10px 0;
+    position: relative;
+}
+
+.timeline-date {
+    font-weight: bold;
+    color: red;
+    position: absolute;
+    left: -100px;
+    top: 20px;
+}
+
+.timeline-content {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.faq {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    
+}
+.faq-item {
+    border: 1px solid white;
+    background-color: #025362;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: white;
+}
+
+.faq-question {
+    cursor: pointer;
+    color: white;
+    margin: 0;
+}
+
+.faq-answer {
+    display: none; /* Esconde as respostas inicialmente */
+    margin: 5px 0 0;
+}
